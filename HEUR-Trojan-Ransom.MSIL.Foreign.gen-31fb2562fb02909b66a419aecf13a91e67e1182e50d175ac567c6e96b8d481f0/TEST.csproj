@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>TEST</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net40</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>Preview</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="h1Hmav0mF396N3ddxNmphsRgwuVGwYuT-gvzrq6iEH7EXKD18.S8V6al48Z3X7y-4wykoJABRpznp6URcdTrX6G2ebnNsJ500KdKwgOUdrMTQsk-" />
+    <None Remove="M1E6Fa8Esy5wrh0L6pXFnybDNqxgEr8Kod-NzmH-WniG8Oa3OhRgsXfMLAmGL-eibyXcqmUchKCwEV6c4SNX8SXEIwERPpGXPzBeZFADUrpnRDIBO1qz" />
+    <EmbeddedResource Include="h1Hmav0mF396N3ddxNmphsRgwuVGwYuT-gvzrq6iEH7EXKD18.S8V6al48Z3X7y-4wykoJABRpznp6URcdTrX6G2ebnNsJ500KdKwgOUdrMTQsk-" />
+    <EmbeddedResource Include="M1E6Fa8Esy5wrh0L6pXFnybDNqxgEr8Kod-NzmH-WniG8Oa3OhRgsXfMLAmGL-eibyXcqmUchKCwEV6c4SNX8SXEIwERPpGXPzBeZFADUrpnRDIBO1qz" />
+  </ItemGroup>
+  <ItemGroup />
+</Project>

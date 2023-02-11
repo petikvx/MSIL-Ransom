@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>WindowsUpdate</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net40</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>Preview</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Dlsbdzokygwszrbyphdiuxiy.Uibljkvlvrvecwgkr.dll" />
+    <None Remove="-" />
+    <EmbeddedResource Include="Dlsbdzokygwszrbyphdiuxiy.Uibljkvlvrvecwgkr.dll" />
+    <EmbeddedResource Include="-" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Uibljkvlvrvecwgkr" />
+  </ItemGroup>
+</Project>
