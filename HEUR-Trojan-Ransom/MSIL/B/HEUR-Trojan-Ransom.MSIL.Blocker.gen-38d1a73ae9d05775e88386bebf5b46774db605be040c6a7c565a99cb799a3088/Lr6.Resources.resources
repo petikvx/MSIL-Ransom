@@ -1,0 +1,206 @@
+?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bridgemanagementModelStoreContainer" CdmEntityContainer="bridgemanagementEntities">
+    <EntitySetMapping Name="bridge">
+      <EntityTypeMapping TypeName="bridgemanagementModel.bridge">
+        <MappingFragment StoreEntitySet="bridge">
+          <ScalarProperty Name="emergencyroad" ColumnName="emergencyroad" />
+          <ScalarProperty Name="undercondition" ColumnName="undercondition" />
+          <ScalarProperty Name="lowermaterial" ColumnName="lowermaterial" />
+          <ScalarProperty Name="uppermaterial" ColumnName="uppermaterial" />
+          <ScalarProperty Name="bridgestructure" ColumnName="bridgestructure" />
+          <ScalarProperty Name="span" ColumnName="span" />
+          <ScalarProperty Name="bridgewidth" ColumnName="bridgewidth" />
+          <ScalarProperty Name="bridgelength" ColumnName="bridgelength" />
+          <ScalarProperty Name="made" ColumnName="made" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="route" ColumnName="route" />
+          <ScalarProperty Name="bridgenameruby" ColumnName="bridgenameruby" />
+          <ScalarProperty Name="bridgename" ColumnName="bridgename" />
+          <ScalarProperty Name="recordvalid" ColumnName="recordvalid" />
+          <ScalarProperty Name="recorduserid" ColumnName="recorduserid" />
+          <ScalarProperty Name="recordprogram" ColumnName="recordprogram" />
+          <ScalarProperty Name="recorddate" ColumnName="recorddate" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bridgehistory">
+      <EntityTypeMapping TypeName="bridgemanagementModel.bridgehistory">
+        <MappingFragment StoreEntitySet="bridgehistory">
+          <ScalarProperty Name="emergencyroad" ColumnName="emergencyroad" />
+          <ScalarProperty Name="undercondition" ColumnName="undercondition" />
+          <ScalarProperty Name="lowermaterial" ColumnName="lowermaterial" />
+          <ScalarProperty Name="uppermaterial" ColumnName="uppermaterial" />
+          <ScalarProperty Name="bridgestructure" ColumnName="bridgestructure" />
+          <ScalarProperty Name="span" ColumnName="span" />
+          <ScalarProperty Name="bridgewidth" ColumnName="bridgewidth" />
+          <ScalarProperty Name="bridgelength" ColumnName="bridgelength" />
+          <ScalarProperty Name="made" ColumnName="made" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="route" ColumnName="route" />
+          <ScalarProperty Name="bridgenameruby" ColumnName="bridgenameruby" />
+          <ScalarProperty Name="bridgename" ColumnName="bridgename" />
+          <ScalarProperty Name="recordvalid" ColumnName="recordvalid" />
+          <ScalarProperty Name="recorduserid" ColumnName="recorduserid" />
+          <ScalarProperty Name="recordprogram" ColumnName="recordprogram" />
+          <ScalarProperty Name="recorddate" ColumnName="recorddate" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bridgenote">
+      <EntityTypeMapping TypeName="bridgemanagementModel.bridgenote">
+        <MappingFragment StoreEntitySet="bridgenote">
+          <ScalarProperty Name="memo" ColumnName="memo" />
+          <ScalarProperty Name="inspectionway" ColumnName="inspectionway" />
+          <ScalarProperty Name="nextinspection" ColumnName="nextinspection" />
+          <ScalarProperty Name="repair" ColumnName="repair" />
+          <ScalarProperty Name="recordvalid" ColumnName="recordvalid" />
+          <ScalarProperty Name="recorduserid" ColumnName="recorduserid" />
+          <ScalarProperty Name="recordprogram" ColumnName="recordprogram" />
+          <ScalarProperty Name="recorddate" ColumnName="recorddate" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bridgenotehistory">
+      <EntityTypeMapping TypeName="bridgemanagementModel.bridgenotehistory">
+        <MappingFragment StoreEntitySet="bridgenotehistory">
+          <ScalarProperty Name="memo" ColumnName="memo" />
+          <ScalarProperty Name="inspectionway" ColumnName="inspectionway" />
+          <ScalarProperty Name="nextinspection" ColumnName="nextinspection" />
+          <ScalarProperty Name="repair" ColumnName="repair" />
+          <ScalarProperty Name="recordvalid" ColumnName="recordvalid" />
+          <ScalarProperty Name="recorduserid" ColumnName="recorduserid" />
+          <ScalarProperty Name="recordprogram" ColumnName="recordprogram" />
+          <ScalarProperty Name="recorddate" ColumnName="recorddate" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="inspection">
+      <EntityTypeMapping TypeName="bridgemanagementModel.inspection">
+        <MappingFragment StoreEntitySet="inspection">
+          <ScalarProperty Name="datasavedir" ColumnName="datasavedir" />
+          <ScalarProperty Name="face" ColumnName="face" />
+          <ScalarProperty Name="bearing" ColumnName="bearing" />
+          <ScalarProperty Name="undermaterial" ColumnName="undermaterial" />
+          <ScalarProperty Name="uppermaterialfloor" ColumnName="uppermaterialfloor" />
+          <ScalarProperty Name="uppermaterialside" ColumnName="uppermaterialside" />
+          <ScalarProperty Name="uppermaterialmain" ColumnName="uppermaterialmain" />
+          <ScalarProperty Name="soundness" ColumnName="soundness" />
+          <ScalarProperty Name="occupancy" ColumnName="occupancy" />
+          <ScalarProperty Name="emergencyroad" ColumnName="emergencyroad" />
+          <ScalarProperty Name="generalroad" ColumnName="generalroad" />
+          <ScalarProperty Name="alternatepath" ColumnName="alternatepath" />
+          <ScalarProperty Name="undercondition" ColumnName="undercondition" />
+          <ScalarProperty Name="inspectioner" ColumnName="inspectioner" />
+          <ScalarProperty Name="inspectionyear" ColumnName="inspectionyear" />
+          <ScalarProperty Name="recordvalid" ColumnName="recordvalid" />
+          <ScalarProperty Name="recorduserid" ColumnName="recorduserid" />
+          <ScalarProperty Name="recordprogram" ColumnName="recordprogram" />
+          <ScalarProperty Name="recorddate" ColumnName="recorddate" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="inspectionexcel">
+      <EntityTypeMapping TypeName="bridgemanagementModel.inspectionexcel">
+        <MappingFragment StoreEntitySet="inspectionexcel">
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="error" ColumnName="error" />
+          <ScalarProperty Name="face" ColumnName="face" />
+          <ScalarProperty Name="bearing" ColumnName="bearing" />
+          <ScalarProperty Name="undermaterial" ColumnName="undermaterial" />
+          <ScalarProperty Name="uppermaterialfloor" ColumnName="uppermaterialfloor" />
+          <ScalarProperty Name="uppermaterialside" ColumnName="uppermaterialside" />
+          <ScalarProperty Name="uppermaterialmain" ColumnName="uppermaterialmain" />
+          <ScalarProperty Name="soundness" ColumnName="soundness" />
+          <ScalarProperty Name="occupancy" ColumnName="occupancy" />
+          <ScalarProperty Name="emergencyroad" ColumnName="emergencyroad" />
+          <ScalarProperty Name="generalroad" ColumnName="generalroad" />
+          <ScalarProperty Name="alternatepath" ColumnName="alternatepath" />
+          <ScalarProperty Name="undercondition" ColumnName="undercondition" />
+          <ScalarProperty Name="inspectioner" ColumnName="inspectioner" />
+          <ScalarProperty Name="inspectionyear" ColumnName="inspectionyear" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="datadir" ColumnName="datadir" />
+          <ScalarProperty Name="ident" ColumnName="ident" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="inspectionhistory">
+      <EntityTypeMapping TypeName="bridgemanagementModel.inspectionhistory">
+        <MappingFragment StoreEntitySet="inspectionhistory">
+          <ScalarProperty Name="datasavedir" ColumnName="datasavedir" />
+          <ScalarProperty Name="face" ColumnName="face" />
+          <ScalarProperty Name="bearing" ColumnName="bearing" />
+          <ScalarProperty Name="undermaterial" ColumnName="undermaterial" />
+          <ScalarProperty Name="uppermaterialfloor" ColumnName="uppermaterialfloor" />
+          <ScalarProperty Name="uppermaterialside" ColumnName="uppermaterialside" />
+          <ScalarProperty Name="uppermaterialmain" ColumnName="uppermaterialmain" />
+          <ScalarProperty Name="soundness" ColumnName="soundness" />
+          <ScalarProperty Name="occupancy" ColumnName="occupancy" />
+          <ScalarProperty Name="emergencyroad" ColumnName="emergencyroad" />
+          <ScalarProperty Name="generalroad" ColumnName="generalroad" />
+          <ScalarProperty Name="alternatepath" ColumnName="alternatepath" />
+          <ScalarProperty Name="undercondition" ColumnName="undercondition" />
+          <ScalarProperty Name="inspectioner" ColumnName="inspectioner" />
+          <ScalarProperty Name="inspectionyear" ColumnName="inspectionyear" />
+          <ScalarProperty Name="recordvalid" ColumnName="recordvalid" />
+          <ScalarProperty Name="recorduserid" ColumnName="recorduserid" />
+          <ScalarProperty Name="recordprogram" ColumnName="recordprogram" />
+          <ScalarProperty Name="recorddate" ColumnName="recorddate" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bridgemanagementview">
+      <EntityTypeMapping TypeName="bridgemanagementModel.bridgemanagementview">
+        <MappingFragment StoreEntitySet="bridgemanagementview">
+          <ScalarProperty Name="datasavedir" ColumnName="datasavedir" />
+          <ScalarProperty Name="face" ColumnName="face" />
+          <ScalarProperty Name="bearing" ColumnName="bearing" />
+          <ScalarProperty Name="undermaterial" ColumnName="undermaterial" />
+          <ScalarProperty Name="uppermaterialfloor" ColumnName="uppermaterialfloor" />
+          <ScalarProperty Name="uppermaterialside" ColumnName="uppermaterialside" />
+          <ScalarProperty Name="uppermaterialmain" ColumnName="uppermaterialmain" />
+          <ScalarProperty Name="soundness" ColumnName="soundness" />
+          <ScalarProperty Name="occupancy" ColumnName="occupancy" />
+          <ScalarProperty Name="inspectionemergencyroad" ColumnName="inspectionemergencyroad" />
+          <ScalarProperty Name="generalroad" ColumnName="generalroad" />
+          <ScalarProperty Name="alternatepath" ColumnName="alternatepath" />
+          <ScalarProperty Name="inspectionundercondition" ColumnName="inspectionundercondition" />
+          <ScalarProperty Name="inspectioner" ColumnName="inspectioner" />
+          <ScalarProperty Name="inspectionyear" ColumnName="inspectionyear" />
+          <ScalarProperty Name="memo" ColumnName="memo" />
+          <ScalarProperty Name="inspectionway" ColumnName="inspectionway" />
+          <ScalarProperty Name="nextinspection" ColumnName="nextinspection" />
+          <ScalarProperty Name="repair" ColumnName="repair" />
+          <ScalarProperty Name="emergencyroad" ColumnName="emergencyroad" />
+          <ScalarProperty Name="undercondition" ColumnName="undercondition" />
+          <ScalarProperty Name="lowermaterial" ColumnName="lowermaterial" />
+          <ScalarProperty Name="uppermaterial" ColumnName="uppermaterial" />
+          <ScalarProperty Name="bridgestructure" ColumnName="bridgestructure" />
+          <ScalarProperty Name="span" ColumnName="span" />
+          <ScalarProperty Name="bridgewidth" ColumnName="bridgewidth" />
+          <ScalarProperty Name="bridgelength" ColumnName="bridgelength" />
+          <ScalarProperty Name="bridgeage" ColumnName="bridgeage" />
+          <ScalarProperty Name="made" ColumnName="made" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="route" ColumnName="route" />
+          <ScalarProperty Name="bridgenameruby" ColumnName="bridgenameruby" />
+          <ScalarProperty Name="bridgename" ColumnName="bridgename" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,290 @@
+?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bridgemanagementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="bridge">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="recorddate" Type="datetime" Nullable="false" />
+    <Property Name="recordprogram" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="recorduserid" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="recordvalid" Type="bit" Nullable="false" />
+    <Property Name="bridgename" Type="nvarchar(max)" />
+    <Property Name="bridgenameruby" Type="nvarchar(max)" />
+    <Property Name="route" Type="nvarchar(max)" />
+    <Property Name="address" Type="nvarchar(max)" />
+    <Property Name="latitude" Type="nvarchar(max)" />
+    <Property Name="longitude" Type="nvarchar(max)" />
+    <Property Name="made" Type="int" />
+    <Property Name="bridgelength" Type="numeric" Precision="5" Scale="1" />
+    <Property Name="bridgewidth" Type="numeric" Precision="3" Scale="1" />
+    <Property Name="span" Type="int" />
+    <Property Name="bridgestructure" Type="nvarchar(max)" />
+    <Property Name="uppermaterial" Type="nvarchar(max)" />
+    <Property Name="lowermaterial" Type="nvarchar(max)" />
+    <Property Name="undercondition" Type="nvarchar(max)" />
+    <Property Name="emergencyroad" Type="nvarchar(max)" />
+  </EntityType>
+  <!--生成中に見つかったエラー:
+警告 6013: テーブル/ビュー 'bridgemanagement.dbo.bridge_temp' に主キーが定義されておらず、有効な主キーを推論できませんでした。このテーブル/ビューは除外されました。エンティティを使用するには、スキーマを確認し、正しいキーを追加して、コメントを解除する必要があります。
+        <EntityType Name="bridge_temp">
+          <Property Name="国交省作業番号" Type="varchar" MaxLength="50" />
+          <Property Name="道路橋名" Type="varchar" MaxLength="50" />
+          <Property Name="道路橋名(カナ)" Type="varchar" MaxLength="50" />
+          <Property Name="路線名" Type="varchar" MaxLength="50" />
+          <Property Name="所在地" Type="varchar" MaxLength="50" />
+          <Property Name="緯度" Type="varchar" MaxLength="50" />
+          <Property Name="経度" Type="varchar" MaxLength="50" />
+          <Property Name="架設年次" Type="varchar" MaxLength="50" />
+          <Property Name="橋長" Type="varchar" MaxLength="50" />
+          <Property Name="幅員" Type="varchar" MaxLength="50" />
+          <Property Name="径間数" Type="varchar" MaxLength="50" />
+          <Property Name="構造形式" Type="varchar" MaxLength="50" />
+          <Property Name="上部工使用材料" Type="varchar" MaxLength="50" />
+          <Property Name="床板材料" Type="varchar" MaxLength="50" />
+          <Property Name="路下条件" Type="varchar" MaxLength="50" />
+          <Property Name="緊急輸送道路" Type="varchar" MaxLength="50" />
+        </EntityType>-->
+  <EntityType Name="bridgehistory">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="recorddate" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="recorddate" Type="datetime" Nullable="false" />
+    <Property Name="recordprogram" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="recorduserid" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="recordvalid" Type="bit" Nullable="false" />
+    <Property Name="bridgename" Type="nvarchar(max)" />
+    <Property Name="bridgenameruby" Type="nvarchar(max)" />
+    <Property Name="route" Type="nvarchar(max)" />
+    <Property Name="address" Type="nvarchar(max)" />
+    <Property Name="latitude" Type="nvarchar(max)" />
+    <Property Name="longitude" Type="nvarchar(max)" />
+    <Property Name="made" Type="int" />
+    <Property Name="bridgelength" Type="numeric" Precision="5" Scale="1" />
+    <Property Name="bridgewidth" Type="numeric" Precision="3" Scale="1" />
+    <Property Name="span" Type="int" />
+    <Property Name="bridgestructure" Type="nvarchar(max)" />
+    <Property Name="uppermaterial" Type="nvarchar(max)" />
+    <Property Name="lowermaterial" Type="nvarchar(max)" />
+    <Property Name="undercondition" Type="nvarchar(max)" />
+    <Property Name="emergencyroad" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="bridgenote">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="recorddate" Type="datetime" Nullable="false" />
+    <Property Name="recordprogram" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="recorduserid" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="recordvalid" Type="bit" Nullable="false" />
+    <Property Name="repair" Type="nvarchar(max)" />
+    <Property Name="nextinspection" Type="int" />
+    <Property Name="inspectionway" Type="nvarchar(max)" />
+    <Property Name="memo" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="bridgenotehistory">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="recorddate" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="recorddate" Type="datetime" Nullable="false" />
+    <Property Name="recordprogram" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="recorduserid" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="recordvalid" Type="bit" Nullable="false" />
+    <Property Name="repair" Type="nvarchar(max)" />
+    <Property Name="nextinspection" Type="int" />
+    <Property Name="inspectionway" Type="nvarchar(max)" />
+    <Property Name="memo" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="inspection">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="recorddate" Type="datetime" Nullable="false" />
+    <Property Name="recordprogram" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="recorduserid" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="recordvalid" Type="bit" Nullable="false" />
+    <Property Name="inspectionyear" Type="int" />
+    <Property Name="inspectioner" Type="nvarchar(max)" />
+    <Property Name="undercondition" Type="nvarchar(max)" />
+    <Property Name="alternatepath" Type="nvarchar(max)" />
+    <Property Name="generalroad" Type="nvarchar(max)" />
+    <Property Name="emergencyroad" Type="nvarchar(max)" />
+    <Property Name="occupancy" Type="nvarchar(max)" />
+    <Property Name="soundness" Type="nvarchar(max)" />
+    <Property Name="uppermaterialmain" Type="nvarchar(max)" />
+    <Property Name="uppermaterialside" Type="nvarchar(max)" />
+    <Property Name="uppermaterialfloor" Type="nvarchar(max)" />
+    <Property Name="undermaterial" Type="nvarchar(max)" />
+    <Property Name="bearing" Type="nvarchar(max)" />
+    <Property Name="face" Type="nvarchar(max)" />
+    <Property Name="datasavedir" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="inspectionexcel">
+    <Key>
+      <PropertyRef Name="ident" />
+    </Key>
+    <Property Name="ident" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="datadir" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="id" Type="int" />
+    <Property Name="inspectionyear" Type="int" />
+    <Property Name="inspectioner" Type="nvarchar(max)" />
+    <Property Name="undercondition" Type="nvarchar(max)" />
+    <Property Name="alternatepath" Type="nvarchar(max)" />
+    <Property Name="generalroad" Type="nvarchar(max)" />
+    <Property Name="emergencyroad" Type="nvarchar(max)" />
+    <Property Name="occupancy" Type="nvarchar(max)" />
+    <Property Name="soundness" Type="nvarchar(max)" />
+    <Property Name="uppermaterialmain" Type="nvarchar(max)" />
+    <Property Name="uppermaterialside" Type="nvarchar(max)" />
+    <Property Name="uppermaterialfloor" Type="nvarchar(max)" />
+    <Property Name="undermaterial" Type="nvarchar(max)" />
+    <Property Name="bearing" Type="nvarchar(max)" />
+    <Property Name="face" Type="nvarchar(max)" />
+    <Property Name="error" Type="bit" Nullable="false" />
+    <Property Name="message" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="inspectionhistory">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="recorddate" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="recorddate" Type="datetime" Nullable="false" />
+    <Property Name="recordprogram" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="recorduserid" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="recordvalid" Type="bit" Nullable="false" />
+    <Property Name="inspectionyear" Type="int" />
+    <Property Name="inspectioner" Type="nvarchar(max)" />
+    <Property Name="undercondition" Type="nvarchar(max)" />
+    <Property Name="alternatepath" Type="nvarchar(max)" />
+    <Property Name="generalroad" Type="nvarchar(max)" />
+    <Property Name="emergencyroad" Type="nvarchar(max)" />
+    <Property Name="occupancy" Type="nvarchar(max)" />
+    <Property Name="soundness" Type="nvarchar(max)" />
+    <Property Name="uppermaterialmain" Type="nvarchar(max)" />
+    <Property Name="uppermaterialside" Type="nvarchar(max)" />
+    <Property Name="uppermaterialfloor" Type="nvarchar(max)" />
+    <Property Name="undermaterial" Type="nvarchar(max)" />
+    <Property Name="bearing" Type="nvarchar(max)" />
+    <Property Name="face" Type="nvarchar(max)" />
+    <Property Name="datasavedir" Type="nvarchar(max)" />
+  </EntityType>
+  <!--生成中に見つかったエラー:
+警告 6013: テーブル/ビュー 'bridgemanagement.dbo.パスコデータ' に主キーが定義されておらず、有効な主キーを推論できませんでした。このテーブル/ビューは除外されました。エンティティを使用するには、スキーマを確認し、正しいキーを追加して、コメントを解除する必要があります。
+        <EntityType Name="パスコデータ">
+          <Property Name="国交省作業用番号" Type="varchar" MaxLength="50" />
+          <Property Name="道路橋名" Type="varchar" MaxLength="50" />
+          <Property Name="道路橋名カナ" Type="varchar" MaxLength="50" />
+          <Property Name="路線名" Type="varchar" MaxLength="50" />
+          <Property Name="所在地" Type="varchar" MaxLength="50" />
+          <Property Name="緯度" Type="varchar" MaxLength="50" />
+          <Property Name="経度" Type="varchar" MaxLength="50" />
+          <Property Name="年次" Type="varchar" MaxLength="50" />
+          <Property Name="橋長" Type="varchar" MaxLength="50" />
+          <Property Name="幅員" Type="varchar" MaxLength="50" />
+          <Property Name="径間数" Type="varchar" MaxLength="50" />
+          <Property Name="構造形式" Type="varchar" MaxLength="50" />
+          <Property Name="上部工使用材料" Type="varchar" MaxLength="50" />
+          <Property Name="床板材料" Type="varchar" MaxLength="50" />
+          <Property Name="路下条件" Type="varchar" MaxLength="50" />
+          <Property Name="緊急輸送道路" Type="varchar" MaxLength="50" />
+        </EntityType>-->
+  <!--生成中に見つかったエラー:
+警告 6002: テーブル/ビュー 'bridgemanagement.dbo.bridgemanagementview' には主キーが定義されていません。主キーは推論され、定義は読み取り専用のテーブル/ビューとして作成されました。-->
+  <EntityType Name="bridgemanagementview">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="bridgename" Type="nvarchar(max)" />
+    <Property Name="bridgenameruby" Type="nvarchar(max)" />
+    <Property Name="route" Type="nvarchar(max)" />
+    <Property Name="address" Type="nvarchar(max)" />
+    <Property Name="latitude" Type="nvarchar(max)" />
+    <Property Name="longitude" Type="nvarchar(max)" />
+    <Property Name="made" Type="int" />
+    <Property Name="bridgeage" Type="int" />
+    <Property Name="bridgelength" Type="numeric" Precision="5" Scale="1" />
+    <Property Name="bridgewidth" Type="numeric" Precision="3" Scale="1" />
+    <Property Name="span" Type="int" />
+    <Property Name="bridgestructure" Type="nvarchar(max)" />
+    <Property Name="uppermaterial" Type="nvarchar(max)" />
+    <Property Name="lowermaterial" Type="nvarchar(max)" />
+    <Property Name="undercondition" Type="nvarchar(max)" />
+    <Property Name="emergencyroad" Type="nvarchar(max)" />
+    <Property Name="repair" Type="nvarchar(max)" />
+    <Property Name="nextinspection" Type="int" />
+    <Property Name="inspectionway" Type="nvarchar(max)" />
+    <Property Name="memo" Type="nvarchar(max)" />
+    <Property Name="inspectionyear" Type="int" />
+    <Property Name="inspectioner" Type="nvarchar(max)" />
+    <Property Name="inspectionundercondition" Type="nvarchar(max)" />
+    <Property Name="alternatepath" Type="nvarchar(max)" />
+    <Property Name="generalroad" Type="nvarchar(max)" />
+    <Property Name="inspectionemergencyroad" Type="nvarchar(max)" />
+    <Property Name="occupancy" Type="nvarchar(max)" />
+    <Property Name="soundness" Type="nvarchar(max)" />
+    <Property Name="uppermaterialmain" Type="nvarchar(max)" />
+    <Property Name="uppermaterialside" Type="nvarchar(max)" />
+    <Property Name="uppermaterialfloor" Type="nvarchar(max)" />
+    <Property Name="undermaterial" Type="nvarchar(max)" />
+    <Property Name="bearing" Type="nvarchar(max)" />
+    <Property Name="face" Type="nvarchar(max)" />
+    <Property Name="datasavedir" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="bridgemanagementModelStoreContainer">
+    <EntitySet Name="bridge" EntityType="Self.bridge" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="bridgehistory" EntityType="Self.bridgehistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="bridgenote" EntityType="Self.bridgenote" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="bridgenotehistory" EntityType="Self.bridgenotehistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="inspection" EntityType="Self.inspection" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="inspectionexcel" EntityType="Self.inspectionexcel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="inspectionhistory" EntityType="Self.inspectionhistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="bridgemanagementview" EntityType="Self.bridgemanagementview" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [bridgemanagementview].[id] AS [id], 
+    [bridgemanagementview].[bridgename] AS [bridgename], 
+    [bridgemanagementview].[bridgenameruby] AS [bridgenameruby], 
+    [bridgemanagementview].[route] AS [route], 
+    [bridgemanagementview].[address] AS [address], 
+    [bridgemanagementview].[latitude] AS [latitude], 
+    [bridgemanagementview].[longitude] AS [longitude], 
+    [bridgemanagementview].[made] AS [made], 
+    [bridgemanagementview].[bridgeage] AS [bridgeage], 
+    [bridgemanagementview].[bridgelength] AS [bridgelength], 
+    [bridgemanagementview].[bridgewidth] AS [bridgewidth], 
+    [bridgemanagementview].[span] AS [span], 
+    [bridgemanagementview].[bridgestructure] AS [bridgestructure], 
+    [bridgemanagementview].[uppermaterial] AS [uppermaterial], 
+    [bridgemanagementview].[lowermaterial] AS [lowermaterial], 
+    [bridgemanagementview].[undercondition] AS [undercondition], 
+    [bridgemanagementview].[emergencyroad] AS [emergencyroad], 
+    [bridgemanagementview].[repair] AS [repair], 
+    [bridgemanagementview].[nextinspection] AS [nextinspection], 
+    [bridgemanagementview].[inspectionway] AS [inspectionway], 
+    [bridgemanagementview].[memo] AS [memo], 
+    [bridgemanagementview].[inspectionyear] AS [inspectionyear], 
+    [bridgemanagementview].[inspectioner] AS [inspectioner], 
+    [bridgemanagementview].[inspectionundercondition] AS [inspectionundercondition], 
+    [bridgemanagementview].[alternatepath] AS [alternatepath], 
+    [bridgemanagementview].[generalroad] AS [generalroad], 
+    [bridgemanagementview].[inspectionemergencyroad] AS [inspectionemergencyroad], 
+    [bridgemanagementview].[occupancy] AS [occupancy], 
+    [bridgemanagementview].[soundness] AS [soundness], 
+    [bridgemanagementview].[uppermaterialmain] AS [uppermaterialmain], 
+    [bridgemanagementview].[uppermaterialside] AS [uppermaterialside], 
+    [bridgemanagementview].[uppermaterialfloor] AS [uppermaterialfloor], 
+    [bridgemanagementview].[undermaterial] AS [undermaterial], 
+    [bridgemanagementview].[bearing] AS [bearing], 
+    [bridgemanagementview].[face] AS [face], 
+    [bridgemanagementview].[datasavedir] AS [datasavedir]
+    FROM [dbo].[bridgemanagementview] AS [bridgemanagementview]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

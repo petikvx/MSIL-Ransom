@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>Ptqnacc</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net40</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>Preview</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Apjmqciddnbbpsnfq.Oscuhwgrijteinxiakblsjr.dll" />
+    <EmbeddedResource Include="Apjmqciddnbbpsnfq.Oscuhwgrijteinxiakblsjr.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Oscuhwgrijteinxiakblsjr" />
+  </ItemGroup>
+</Project>
