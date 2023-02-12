@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D5D43D9-00C7-472C-BEB1-9CB03C95A93F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>M_POST_for_EBDS_Demo_In_CSharp_DotNet</RootNamespace>
+    <AssemblyName>SDVSafe</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>M_POST_for_EBDS_Demo_In_CSharp_DotNet.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MPOST" />
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BatchHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BatchHistory.Designer.cs">
+      <DependentUpon>BatchHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BatchHistoryLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BatchHistoryLogin.Designer.cs">
+      <DependentUpon>BatchHistoryLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashClsLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashClsLogin.Designer.cs">
+      <DependentUpon>CashClsLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsBankBatchData.cs" />
+    <Compile Include="clsDevices.cs" />
+    <Compile Include="clsEncryptDecrypt.cs" />
+    <Compile Include="clsServiceProviders.cs" />
+    <Compile Include="clsStores.cs" />
+    <Compile Include="clsUsers.cs" />
+    <Compile Include="frmInitialPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInitialPage.Designer.cs">
+      <DependentUpon>frmInitialPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPreviewDecrypt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPreviewDecrypt.Designer.cs">
+      <DependentUpon>frmPreviewDecrypt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStoreSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStoreSelection.Designer.cs">
+      <DependentUpon>frmStoreSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStoreSelectionLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStoreSelectionLogin.Designer.cs">
+      <DependentUpon>frmStoreSelectionLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainLogin.Designer.cs">
+      <DependentUpon>MainLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyGlobalClass.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="app.config" />
+    <EmbeddedResource Include="BatchHistory.resources" />
+    <EmbeddedResource Include="BatchHistoryLogin.resources" />
+    <EmbeddedResource Include="CashClsLogin.resources" />
+    <EmbeddedResource Include="frmInitialPage.resources" />
+    <EmbeddedResource Include="frmPreviewDecrypt.resources" />
+    <EmbeddedResource Include="frmStoreSelection.resources" />
+    <EmbeddedResource Include="frmStoreSelectionLogin.resources" />
+    <EmbeddedResource Include="Login.resources" />
+    <EmbeddedResource Include="Main.resources" />
+    <EmbeddedResource Include="MainLogin.resources" />
+    <EmbeddedResource Include="Properties\Resources.resources" />
+    <EmbeddedResource Include="Resources\Money.jpg" />
+    <EmbeddedResource Include="Settings.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
