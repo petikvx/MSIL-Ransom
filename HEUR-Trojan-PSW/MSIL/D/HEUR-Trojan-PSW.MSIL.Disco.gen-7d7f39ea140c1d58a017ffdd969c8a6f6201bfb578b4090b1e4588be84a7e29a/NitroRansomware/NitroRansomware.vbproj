@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{532926E8-D96F-4881-84A8-ACD047A9A3DD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NitroRansomware</RootNamespace>
+    <AssemblyName>NitroRansomware</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <StartupObject>NitroRansomware.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.vb" />
+    <Compile Include="-Module-{CB9E4077-BA1E-4F0D-88BB-C50682C7119D}.vb" />
+    <Compile Include="Crypto.vb" />
+    <Compile Include="dg3ypDAonQcOidMs0w\WP6RZJql8gZrNhVA9v.vb" />
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grabber.vb" />
+    <Compile Include="Logs.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="Nitro.vb" />
+    <Compile Include="oRZtxCaSAYh6EEGEIZ\Idt5pgryuYoFVQiX6j.vb" />
+    <Compile Include="Program.vb" />
+    <Compile Include="Properties\Resources.vb" />
+    <Compile Include="rE4lpnT863QnijKQK5\hHEYokUTtehNq5ji0d.vb" />
+    <Compile Include="User.vb" />
+    <Compile Include="Wallpaper.vb" />
+    <Compile Include="Webhook.vb" />
+    <Compile Include="zlqCXdcKao7YZQAGFe\kSQlZa9TWrZWUAWTnp.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="aR3nbf8dQp2feLmk31.lSfgApatkdxsVcGcrktoFd.resources" />
+    <EmbeddedResource Include="Form1.resources" />
+    <EmbeddedResource Include="g.resources" />
+    <EmbeddedResource Include="Properties\Resources.resources" />
+    <EmbeddedResource Include="Resources\wl.png" />
+    <EmbeddedResource Include="TobEC4hIgCxF0TwsAh.Xg5oMBsggOsrj5CWF8" />
+    <EmbeddedResource Include="Zolk9kCyJtZSWZwA3H.C5fn7SnRigF4bi1Hkk" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

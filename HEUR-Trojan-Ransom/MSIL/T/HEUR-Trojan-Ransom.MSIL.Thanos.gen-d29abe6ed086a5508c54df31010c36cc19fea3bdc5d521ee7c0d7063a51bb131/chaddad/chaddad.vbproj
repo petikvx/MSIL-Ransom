@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{0384FB7A-7C67-46A4-83B1-9C234DDCD057}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>chaddad</RootNamespace>
+    <AssemblyName>chaddad</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <StartupObject>frgoWklvEOSV.PFruJiQrcriiZ</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-PrivateImplementationDetails-.vb" />
+    <Compile Include="frgoWklvEOSV\AnLYutpDjmCX.vb" />
+    <Compile Include="frgoWklvEOSV\ccZAZbktzmqn.vb" />
+    <Compile Include="frgoWklvEOSV\cqqMHKHKHQkt.vb" />
+    <Compile Include="frgoWklvEOSV\CyVDCXKNZkh.vb" />
+    <Compile Include="frgoWklvEOSV\dDyurqCmIYO.vb" />
+    <Compile Include="frgoWklvEOSV\dsNajfALrLtCLf.vb" />
+    <Compile Include="frgoWklvEOSV\fkozHCDTDrY.vb" />
+    <Compile Include="frgoWklvEOSV\FlpXYRWvTX.vb" />
+    <Compile Include="frgoWklvEOSV\GyWbmViNanxKl.vb" />
+    <Compile Include="frgoWklvEOSV\IUmAujruwdxT.vb" />
+    <Compile Include="frgoWklvEOSV\NqaDDCCMEbCxV.vb" />
+    <Compile Include="frgoWklvEOSV\oFzjyQZaztDJ.vb" />
+    <Compile Include="frgoWklvEOSV\PFruJiQrcriiZ.vb" />
+    <Compile Include="frgoWklvEOSV\PmZcbpYMQkkuHdO.vb" />
+    <Compile Include="frgoWklvEOSV\SXJylLGRkSghP.vb" />
+    <Compile Include="frgoWklvEOSV\vyQYEsUfMyGoFM.vb" />
+    <Compile Include="frgoWklvEOSV\xctUtgFsRkGVFBEL.vb" />
+    <Compile Include="frgoWklvEOSV\YbwphERrMyQNP.vb" />
+    <Compile Include="LKDFotCmhcU\tEHWewuHPsL.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="ns0\Attribute0.vb" />
+    <Compile Include="ns1\Class0.vb" />
+    <Compile Include="oFbodOYJTt\RpWKlAyYXuFg.vb" />
+    <Compile Include="SmartAssembly\Attributes\DoNotMoveAttribute.vb" />
+    <Compile Include="SmartAssembly\Attributes\DoNotObfuscateAttribute.vb" />
+    <Compile Include="SmartAssembly\Attributes\DoNotObfuscateTypeAttribute.vb" />
+    <Compile Include="SmartAssembly\Attributes\DoNotPruneAttribute.vb" />
+    <Compile Include="SmartAssembly\Attributes\DoNotPruneTypeAttribute.vb" />
+    <Compile Include="SmartAssembly\Delegates\GetString.vb" />
+    <Compile Include="SmartAssembly\HouseOfCards\MemberRefsProxy.vb" />
+    <Compile Include="SmartAssembly\HouseOfCards\Strings.vb" />
+    <Compile Include="SmartAssembly\StringsEncoding\DoNotMoveAttribute.vb" />
+    <Compile Include="SmartAssembly\StringsEncoding\DoNotPruneAttribute.vb" />
+    <Compile Include="SmartAssembly\StringsEncoding\Strings.vb" />
+    <Compile Include="SmartAssembly\Zip\CompressionAlgorithm.vb" />
+    <Compile Include="SmartAssembly\Zip\SimpleZip.vb" />
+    <Compile Include="sSiavGDcVOKW.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="{4b195894-0f06-4fdd-afb4-b17fb9246a59}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
