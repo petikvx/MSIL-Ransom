@@ -1,0 +1,83 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>SharpHound</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net452</TargetFramework>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>Preview</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="costura.commandline.dll.compressed" />
+    <None Remove="costura.costura.dll.compressed" />
+    <None Remove="costura.dnsclient.dll.compressed" />
+    <None Remove="costura.icsharpcode.sharpziplib.dll.compressed" />
+    <None Remove="costura.icsharpcode.sharpziplib.pdb.compressed" />
+    <None Remove="costura.newtonsoft.json.dll.compressed" />
+    <None Remove="costura.system.buffers.dll.compressed" />
+    <None Remove="costura.system.threading.tasks.dataflow.dll.compressed" />
+    <None Remove="costura.system.valuetuple.dll.compressed" />
+    <EmbeddedResource Include="costura.commandline.dll.compressed" />
+    <EmbeddedResource Include="costura.costura.dll.compressed" />
+    <EmbeddedResource Include="costura.dnsclient.dll.compressed" />
+    <EmbeddedResource Include="costura.icsharpcode.sharpziplib.dll.compressed" />
+    <EmbeddedResource Include="costura.icsharpcode.sharpziplib.pdb.compressed" />
+    <EmbeddedResource Include="costura.newtonsoft.json.dll.compressed" />
+    <EmbeddedResource Include="costura.system.buffers.dll.compressed" />
+    <EmbeddedResource Include="costura.system.threading.tasks.dataflow.dll.compressed" />
+    <EmbeddedResource Include="costura.system.valuetuple.dll.compressed" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.Core">
+      <HintPath>/home/petik/dotnet/shared/Microsoft.NETCore.App/6.0.13/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml">
+      <HintPath>/home/petik/dotnet/shared/Microsoft.NETCore.App/6.0.13/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>/home/petik/dotnet/shared/Microsoft.NETCore.App/6.0.13/System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>/home/petik/dotnet/shared/Microsoft.NETCore.App/6.0.13/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>/home/petik/dotnet/shared/Microsoft.NETCore.App/6.0.13/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>/home/petik/dotnet/shared/Microsoft.NETCore.App/6.0.13/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>/home/petik/dotnet/shared/Microsoft.NETCore.App/6.0.13/System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>/home/petik/dotnet/shared/Microsoft.NETCore.App/6.0.13/System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>/home/petik/dotnet/shared/Microsoft.NETCore.App/6.0.13/System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>/home/petik/dotnet/shared/Microsoft.NETCore.App/6.0.13/System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>/home/petik/dotnet/shared/Microsoft.NETCore.App/6.0.13/System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>/home/petik/dotnet/shared/Microsoft.NETCore.App/6.0.13/System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>/home/petik/dotnet/shared/Microsoft.NETCore.App/6.0.13/System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>/home/petik/dotnet/shared/Microsoft.NETCore.App/6.0.13/System.Linq.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

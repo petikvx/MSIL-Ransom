@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>Fly</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net20</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>Preview</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="StreamBaby.FlyWorldE.exe.file2" />
+    <None Remove="StreamBaby.FlyWorldR.exe.file2" />
+    <None Remove="StreamBaby.FlyWorldR.exe.file" />
+    <EmbeddedResource Include="StreamBaby.FlyWorldE.exe.file2" />
+    <EmbeddedResource Include="StreamBaby.FlyWorldR.exe.file2" />
+    <EmbeddedResource Include="StreamBaby.FlyWorldR.exe.file" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web">
+      <HintPath>/home/petik/dotnet/shared/Microsoft.NETCore.App/6.0.13/System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+  </ItemGroup>
+</Project>
