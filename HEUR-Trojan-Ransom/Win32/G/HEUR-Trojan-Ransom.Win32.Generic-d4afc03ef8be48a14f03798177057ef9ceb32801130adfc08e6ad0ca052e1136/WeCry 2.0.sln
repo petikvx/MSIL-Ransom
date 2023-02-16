@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WeCry 2.0", "WeCry 2.0\WeCry 2.0.vbproj", "{802D90AB-0263-4B2C-BFA8-E3792762488F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Unknown = Debug|Unknown
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Unknown = Release|Unknown
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{802D90AB-0263-4B2C-BFA8-E3792762488F}.Debug|Any CPU.ActiveCfg = Debug|Unknown
+		{802D90AB-0263-4B2C-BFA8-E3792762488F}.Debug|Any CPU.Build.0 = Debug|Unknown
+		{802D90AB-0263-4B2C-BFA8-E3792762488F}.Debug|Mixed Platforms.ActiveCfg = Debug|Unknown
+		{802D90AB-0263-4B2C-BFA8-E3792762488F}.Debug|Mixed Platforms.Build.0 = Debug|Unknown
+		{802D90AB-0263-4B2C-BFA8-E3792762488F}.Debug|Unknown.ActiveCfg = Debug|Unknown
+		{802D90AB-0263-4B2C-BFA8-E3792762488F}.Debug|Unknown.Build.0 = Debug|Unknown
+		{802D90AB-0263-4B2C-BFA8-E3792762488F}.Release|Any CPU.ActiveCfg = Release|Unknown
+		{802D90AB-0263-4B2C-BFA8-E3792762488F}.Release|Any CPU.Build.0 = Release|Unknown
+		{802D90AB-0263-4B2C-BFA8-E3792762488F}.Release|Mixed Platforms.ActiveCfg = Release|Unknown
+		{802D90AB-0263-4B2C-BFA8-E3792762488F}.Release|Mixed Platforms.Build.0 = Release|Unknown
+		{802D90AB-0263-4B2C-BFA8-E3792762488F}.Release|Unknown.ActiveCfg = Release|Unknown
+		{802D90AB-0263-4B2C-BFA8-E3792762488F}.Release|Unknown.Build.0 = Release|Unknown
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

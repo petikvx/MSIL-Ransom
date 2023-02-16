@@ -1,0 +1,20 @@
+<notepad>
+	<1>C:\\Windows\\Temp\\go.dll</imagePath>
+	<2>4</manualMapFlags>
+	<3>.\\PointBlank.exe</procName>
+	<4>0</hijack>
+	<5>0</unlink>
+	<6>0</erasePE>
+	<7>1</close>
+	<8>0</krnHandle>
+	<9>0</injIndef>
+	<10>2</processMode>
+	<11>1</injectMode>
+	<12>0</delay>
+	<13>0</period>
+	<14>0</skip>
+	<15/>
+	<16/>
+	<17/>
+</notepad>
+

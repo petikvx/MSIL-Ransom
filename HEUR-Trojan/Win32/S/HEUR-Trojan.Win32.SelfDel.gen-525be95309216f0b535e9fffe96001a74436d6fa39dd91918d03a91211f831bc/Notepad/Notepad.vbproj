@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Unknown</Platform>
+    <ProjectGuid>{D39E0E9F-D12B-434A-9E3A-33F3C222882A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>vHack_Loader</RootNamespace>
+    <AssemblyName>Notepad</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Notepad.ico</ApplicationIcon>
+    <StartupObject>vHack_Loader.My.MyApplication</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Unknown' ">
+    <PlatformTarget>Unknown</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Unknown' ">
+    <PlatformTarget>Unknown</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Draw.vb" />
+    <Compile Include="ExcisionButtonBlue.vb" />
+    <Compile Include="ExcisionButtonDefault.vb" />
+    <Compile Include="ExcisionButtonWhite.vb" />
+    <Compile Include="ExcisionCheckBox.vb" />
+    <Compile Include="ExcisionCircleButton.vb" />
+    <Compile Include="ExcisionControlBox.vb" />
+    <Compile Include="ExcisionGroupBox.vb" />
+    <Compile Include="ExcisionPanel.vb" />
+    <Compile Include="ExcisionProgressBar.vb" />
+    <Compile Include="ExcisionRadioButton.vb" />
+    <Compile Include="ExcisionSeparator.vb" />
+    <Compile Include="ExcisionTheme.vb" />
+    <Compile Include="Forum.vb" />
+    <Compile Include="Globals.vb" />
+    <Compile Include="HTTPWorker.vb" />
+    <Compile Include="ImageToCodeClass.vb" />
+    <Compile Include="Injection.vb" />
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="motd.Designer.vb">
+      <DependentUpon>motd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="motd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MouseState.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="myBB.vb" />
+    <Compile Include="My\MyApplication.vb" />
+    <Compile Include="My\MyComputer.vb" />
+    <Compile Include="My\MyProject.vb" />
+    <Compile Include="My\MySettings.Designer.vb">
+      <DependentUpon>MySettings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="My\MySettingsProperty.vb" />
+    <Compile Include="My\Resources\Resources.vb" />
+    <Compile Include="system2.vb" />
+    <Compile Include="Updater.Designer.vb">
+      <DependentUpon>Updater.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Updater.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="8.exe" />
+    <EmbeddedResource Include="Clean.exe" />
+    <EmbeddedResource Include="cloud.xpr" />
+    <EmbeddedResource Include="Login.resources" />
+    <EmbeddedResource Include="Main.resources" />
+    <EmbeddedResource Include="motd.resources" />
+    <EmbeddedResource Include="Resources.resources" />
+    <EmbeddedResource Include="Updater.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="My\MySettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>MySettings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
