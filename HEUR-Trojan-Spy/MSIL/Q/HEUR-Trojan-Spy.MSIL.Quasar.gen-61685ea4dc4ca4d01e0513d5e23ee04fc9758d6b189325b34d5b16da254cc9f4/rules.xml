@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Rules>
+  <Rule>
+    <Title>Demo Comment Finder</Title>
+    <RegularExpressionPattern>(?://|#|')(.*)</RegularExpressionPattern>
+    <Extensions>
+      <Extension>*</Extension>
+    </Extensions>
+    <Guidance>
+      <Url>https://secure.wikimedia.org/wikipedia/en/wiki/Comment_(computer_programming)</Url>
+    </Guidance>
+    <Description>This demo regular expression will find comments in code. It's included here so you can run the tool and debug without having to manage the other rule files.</Description>
+  </Rule>
+</Rules>
